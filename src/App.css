@@ -1,38 +1,114 @@
 .App {
-  text-align: center;
+  margin-right: 30%;
+  margin-left: 30%;
+  padding: 2%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.name1{
+  padding: 5%;
+  margin-left: 5%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.InputDiv{
+  padding: 3%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.SignUp{
+  padding: 1%;
+  
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-style: none;
+  border-bottom: 2px solid #74c1ff;
+  font-size: 20px;
+}
+.button{
+  background-color: #4b3aeb;
   color: white;
+  font-size: 20px;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
+  border-style: none;
+  border-radius: 8px;
+}
+.SignButtonDiv{
+  text-align: center;
+  padding: 4%;
+}
+.Navbar{
+   margin-left: 40%;
+   margin-top: -15%;
+}
+.Link{
+  margin-top: -20%;
+ padding-left: 5%;
+ font-size: 16px;
+
+}
+a{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+/* checkbox Styling */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-left: 13%;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(218, 208, 208);
+border-radius: 15px;
+}
+.container input:checked ~ .checkmark {
+  background-color: #4312e2;
 }
 
-.App-link {
-  color: #61dafb;
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+p{
+  text-align: center;
+  color: #4300dfd6;
 }
